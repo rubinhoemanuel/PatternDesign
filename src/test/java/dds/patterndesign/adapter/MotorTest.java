@@ -9,7 +9,7 @@ public class MotorTest {
 
 	@Test
 	public void probarMotorComun() {
-		Motor motor = new MotorComun();
+		this.motor = new MotorComun();
 		Assert.assertEquals("encendiendo el MotorComun", motor.encender());
 		Assert.assertEquals("acelerando el MotorComun", motor.acelerar());
 		Assert.assertEquals("apagando el MotorComun", motor.apagar());
@@ -17,7 +17,7 @@ public class MotorTest {
 	
 	@Test
 	public void probarMotoElectricoAdapter() {
-		Motor motor = new MotorElectricoAdapter();
+		this.motor = new MotorElectricoAdapter();
 		Assert.assertEquals("encendiendo el MotorElectricoAdapter", motor.encender());
 		Assert.assertEquals("acelerando el MotorElectricoAdapter", motor.acelerar());
 		Assert.assertEquals("apagando el MotorElectricoAdapter", motor.apagar());
