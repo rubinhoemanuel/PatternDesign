@@ -1,4 +1,4 @@
-package dds.patterndesign.builder.test;
+package dds.patterndesign.builder;
 
 import org.junit.Assert;
 import org.junit.Before;
@@ -16,7 +16,7 @@ public class AutoTest {
 	
 	@Before
 	public void setUp() {
-		autoBuilder = new AutoBuilder();
+		this.autoBuilder = new AutoBuilder();
 		this.motor = new Motor(145456,"1300");
 		this.auto = autoBuilder
 				.withMarca("Dodge")
